@@ -1,8 +1,8 @@
 <script setup>
 import { onMounted, defineAsyncComponent, reactive, watch } from 'vue';
 
-import Icons from './components/Icons.vue';
 import Spinner from './components/Spinner.vue';
+import Icons from './components/Icons.vue';
 const ListItem = defineAsyncComponent(() => import('./components/ListItem.vue'));
 
 import { useMovieStore } from './stores/movie';

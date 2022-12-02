@@ -26,10 +26,6 @@ export const useMovieStore = defineStore({
   },
 
   getters: {
-    getMoviesLength() {
-      return this.filteredMovies.length;
-    },
-
     filteredMovies() {
       return this.movies.filter((movie) => {
         return movie.title.toLowerCase().includes(this.search);
